@@ -26,7 +26,7 @@ public class TestLogin {
 
 
     @Test
-    public void testLogin() throws InterruptedException {
+    public void testLoginWrongLassword() throws InterruptedException {
         this.driver.get("https://jira.hillel.it/login.jsp");
         this.driver.findElement(userNameInput).sendKeys(userName);
         this.driver.findElement(passwordInput).sendKeys(password);
@@ -38,7 +38,6 @@ public class TestLogin {
 
     @AfterTest
     public void tearDown() {
-
         this.driver.quit();
     }
 
