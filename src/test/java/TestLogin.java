@@ -39,7 +39,7 @@ public class TestLogin {
     }
 
     @AfterTest
-    public void tearDown() {
+    public void tearDownWrongTest() {
         this.driver.quit();
     }
 
@@ -53,5 +53,10 @@ public class TestLogin {
 
         Thread.sleep(2000);
         Assert.assertEquals(driver.getCurrentUrl(),"https://jira.hillel.it/secure/Dashboard.jspa");
+    }
+
+    @AfterTest
+    public void tearDownSuccessTest() {
+        this.driver.quit();
     }
 }
