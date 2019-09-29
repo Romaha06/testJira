@@ -1,7 +1,10 @@
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+<<<<<<< HEAD
 import org.testng.Assert;
+=======
+>>>>>>> origin/master
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -23,15 +26,23 @@ public class TestLogin {
     By loginButton = By.xpath("//input[@name='login']");
     By wrongPasswordLabel = By.xpath("//div[@class='aui-message aui-message-error']");
     String userName = "Roman_Chelombitko";
+<<<<<<< HEAD
     String passwordWrong = "AbraKadabra";
     String passwordSuccess = "Roman_Chelombitko";
+=======
+    String password = "AbraKadabra";
+>>>>>>> origin/master
 
 
     @Test
     public void testLoginWrongLassword() throws InterruptedException {
         this.driver.get("https://jira.hillel.it/login.jsp");
         this.driver.findElement(userNameInput).sendKeys(userName);
+<<<<<<< HEAD
         this.driver.findElement(passwordInput).sendKeys(passwordWrong);
+=======
+        this.driver.findElement(passwordInput).sendKeys(password);
+>>>>>>> origin/master
         this.driver.findElement(loginButton).click();
 
         Thread.sleep(2000);
@@ -43,6 +54,7 @@ public class TestLogin {
         this.driver.quit();
     }
 
+<<<<<<< HEAD
     @Test
     public void testLoginSuccess() throws InterruptedException {
 
@@ -58,3 +70,6 @@ public class TestLogin {
 
 }
 
+=======
+}
+>>>>>>> origin/master
