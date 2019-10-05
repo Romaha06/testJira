@@ -6,57 +6,43 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-import static org.testng.Assert.assertTrue;
-
 public class TestLogin {
 
     WebDriver driver;
-
-    @BeforeTest
-    public void setUp() {
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\Admin\\Jira_Login\\chromedriver.exe");
-        this.driver = new ChromeDriver();
-    }
-
-    By userNameInput = By.xpath("//input[@name='os_username']");
-    By passwordInput = By.xpath("//input[@name='os_password']");
-    By loginButton = By.xpath("//input[@name='login']");
-    By wrongPasswordLabel = By.xpath("//div[@class='aui-message aui-message-error']");
+    LoginPage loginPage;
     String userName = "Roman_Chelombitko";
     String passwordWrong = "AbraKadabra";
     String passwordSuccess = "Roman_Chelombitko";
 
-
-    @Test
-    public void testLoginWrongLassword() throws InterruptedException {
-        this.driver.get("https://jira.hillel.it/login.jsp");
-        this.driver.findElement(userNameInput).sendKeys(userName);
-        this.driver.findElement(passwordInput).sendKeys(passwordWrong);
-        this.driver.findElement(loginButton).click();
-
-        Thread.sleep(2000);
-        assertTrue(this.driver.findElement(wrongPasswordLabel).isDisplayed());
+    @BeforeTest
+    public void LoginPage() {
+        System.setProperty("webdriver.chrome.driver", "C:\\Users\\Admin\\Jira_Login\\chromedriver.exe");
+        this.driver = new ChromeDriver();
+        loginPage = new LoginPage(driver);
+        driver.manage().window().maximize();
     }
-
-    @AfterTest
-    public void tearDownWrongTest() {
-        this.driver.quit();
-    }
-
 
     @Test
     public void testLoginSuccess() throws InterruptedException {
         this.driver.get("https://jira.hillel.it/login.jsp");
-        this.driver.findElement(userNameInput).sendKeys(userName);
-        this.driver.findElement(passwordInput).sendKeys(passwordSuccess);
-        this.driver.findElement(loginButton).click();
-
-        Thread.sleep(2000);
-        Assert.assertEquals(driver.getCurrentUrl(),"https://jira.hillel.it/secure/Dashboard.jspa");
+        loginPage.inputData(userName, passwordSuccess);
+        Thread.sleep(3000);
+        Assert.assertEquals(driver.getCurrentUrl(), "https://jira.hillel.it/secure/Dashboard.jspa");
     }
-
     @AfterTest
     public void tearDownSuccessTest() {
+        this.driver.quit();
+    }
+
+    @Test
+    public void testLoginWrongLassword() throws InterruptedException {
+        this.driver.get("https://jira.hillel.it/login.jsp");
+        loginPage.inputData(userName, passwordWrong);
+        Thread.sleep(3000);
+        Assert.assertEquals(loginPage.errorMassage(), "Sorry, your username and password are incorrect - please try again.");
+    }
+    @AfterTest
+    public void tearDownWrongTest() {
         this.driver.quit();
     }
 }
