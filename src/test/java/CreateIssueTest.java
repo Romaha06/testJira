@@ -7,10 +7,6 @@ import pages.LoginPage;
 
 public class CreateIssueTest extends BasePage {
 
-    WebDriver driver;
-
-
-
     @Test
     public void createIssurTest() {
         LoginPage loginPage = new LoginPage(driver);
@@ -34,5 +30,4 @@ public class CreateIssueTest extends BasePage {
 
         Assert.assertTrue(createIssuePage.successfulMessage());
     }
-
 }

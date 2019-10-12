@@ -6,8 +6,6 @@ import pages.LoginPage;
 
 public class TestLogin extends BasePage {
 
-    WebDriver driver;
-
 
     @Test
     public void testLoginSuccess() {

@@ -6,15 +6,14 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 
 public class BasePage {
-
-    WebDriver driver;
+    protected WebDriver driver;
 
     @BeforeTest
     public void setUp() {
         // Fix for - The path to the driver executable must be set by the webdriver.chrome.driver system property
         System.setProperty("webdriver.chrome.driver", "C:\\Users\\Admin\\Test\\chromedriver.exe");
-        // Create a new instance of the Firefox driver
-        driver = new ChromeDriver();
+        // Create a new instance of the Chrome driver
+        this.driver = new ChromeDriver();
     }
 
     @AfterTest

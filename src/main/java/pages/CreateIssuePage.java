@@ -1,7 +1,7 @@
 package pages;
 
 import org.openqa.selenium.*;
-import pages.CammonAction;
+
 
 public class CreateIssuePage {
 
@@ -9,7 +9,7 @@ public class CreateIssuePage {
     CammonAction commonActions;
 
     //Create Issue
-    private By createIssueButton = By.id("create_link");
+    private By createIssueButton = By.xpath("//a[@id='create_link']");
     private By projectInput = By.xpath("//input[@id='project-field']");
     private By issueTypeInput = By.xpath("//input[@id='issuetype-field']");
     private By summaryInput = By.xpath("//input[@id='summary']");
@@ -25,29 +25,28 @@ public class CreateIssuePage {
     }
 
     public void clickOnTheCreateIssueButton() {
-        commonActions.click(createIssueButton, 3, 3);
+        commonActions.click(createIssueButton, 3, 10);
     }
 
     public void fillInProjectInput(String name) {
-        commonActions.enterText(projectInput, "QAAUTO-8", 3, 3);
+        commonActions.enterText(projectInput, "QAAUTO-8", 3, 10);
     }
 
-
     public void fillInIssueTypeInput(String type) {
-        commonActions.enterText(issueTypeInput, type, 3, 3);
+        commonActions.enterText(issueTypeInput, type, 3, 10);
     }
 
     public void fillInSummary(String text) {
-        commonActions.enterText(summaryInput, text, 3, 3);
+        commonActions.enterText(summaryInput, text, 3, 10);
     }
 
     public void fillInDescription(String text) {
         driver.findElement(dataModeSource);
-        commonActions.enterText(descriptionInput, text, 3, 3);
+        commonActions.enterText(descriptionInput, text, 3, 10);
     }
 
     public void clickCreateIssue() {
-        commonActions.click(createButton, 3, 3);
+        commonActions.click(createButton, 3, 10);
     }
 
     public boolean successfulMessage() {
