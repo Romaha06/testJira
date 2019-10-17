@@ -5,11 +5,11 @@ import org.openqa.selenium.*;
 import java.util.NoSuchElementException;
 import java.util.concurrent.TimeUnit;
 
-public class CammonAction {
+public class UIutilities {
 
     WebDriver driver;
 
-    public CammonAction(WebDriver driver) {
+    public UIutilities(WebDriver driver) {
         this.driver = driver;
     }
 
