@@ -1,10 +1,8 @@
-import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import pages.BasePage;
 import pages.LoginPage;
 
-public class TestLogin extends BasePage {
+public class TestLogin extends BaseTest {
 
 
     @Test

@@ -9,7 +9,6 @@ public class LoginPage {
 
     WebDriver driver = null;
 
-
     //login
     private By userNameInput = By.xpath("//input[@name='os_username']");
     private By passwordInput = By.xpath("//input[@name='os_password']");

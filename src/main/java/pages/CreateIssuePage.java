@@ -6,10 +6,10 @@ import org.openqa.selenium.*;
 public class CreateIssuePage {
 
     WebDriver driver;
-    CammonAction commonActions;
+    UIutilities commonActions;
 
     //Create Issue
-    private By createIssueButton = By.xpath("//a[@id='create_link']");
+    private By createIssueButton = By.id("create_link");
     private By projectInput = By.xpath("//input[@id='project-field']");
     private By issueTypeInput = By.xpath("//input[@id='issuetype-field']");
     private By summaryInput = By.xpath("//input[@id='summary']");
@@ -21,7 +21,7 @@ public class CreateIssuePage {
 
     public CreateIssuePage(WebDriver driver) {
         this.driver = driver;
-        commonActions = new CammonAction(driver);
+        commonActions = new UIutilities(driver);
     }
 
     public void clickOnTheCreateIssueButton() {

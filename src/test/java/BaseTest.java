@@ -1,11 +1,9 @@
-package pages;
-
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 
-public class BasePage {
+public class BaseTest {
     protected WebDriver driver;
 
     @BeforeTest
