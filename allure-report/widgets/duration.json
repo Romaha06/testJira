@@ -1,0 +1,31 @@
+[ {
+  "uid" : "f37eb4c81c240074",
+  "name" : "createIssurTest",
+  "time" : {
+    "start" : 1571769600864,
+    "stop" : 1571769626039,
+    "duration" : 25175
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2ef183bafdb799b1",
+  "name" : "testLoginWrongLassword",
+  "time" : {
+    "start" : 1571769000789,
+    "stop" : 1571769003528,
+    "duration" : 2739
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f6bc09f3e7fd911e",
+  "name" : "testLoginSuccess",
+  "time" : {
+    "start" : 1571768987232,
+    "stop" : 1571769000587,
+    "duration" : 13355
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

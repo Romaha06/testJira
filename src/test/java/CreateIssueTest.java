@@ -1,3 +1,4 @@
+import io.qameta.allure.Feature;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.CreateIssuePage;
@@ -5,8 +6,9 @@ import pages.LoginPage;
 
 public class CreateIssueTest extends BaseTest {
 
-    @Test
-    public void createIssurTest() {
+    @Feature("Issue")
+    @Test(groups = {"Regression", "SKIP"})
+    public void createIssurTest()  {
         LoginPage loginPage = new LoginPage(driver);
         loginPage.navigate();
         loginPage.Login("Roman_Chelombitko", "Roman_Chelombitko");
