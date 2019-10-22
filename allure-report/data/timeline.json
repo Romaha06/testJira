@@ -1,0 +1,53 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "DESKTOP-8VADEPP",
+    "children" : [ {
+      "name" : "11256@DESKTOP-8VADEPP.main(1)",
+      "children" : [ {
+        "name" : "createIssurTest",
+        "uid" : "f37eb4c81c240074",
+        "parentUid" : "8c5c582612f5f8c166f1c762d2319a89",
+        "status" : "passed",
+        "time" : {
+          "start" : 1571769600864,
+          "stop" : 1571769626039,
+          "duration" : 25175
+        },
+        "flaky" : true,
+        "parameters" : [ ]
+      } ],
+      "uid" : "8c5c582612f5f8c166f1c762d2319a89"
+    }, {
+      "name" : "6864@DESKTOP-8VADEPP.main(1)",
+      "children" : [ {
+        "name" : "testLoginWrongLassword",
+        "uid" : "2ef183bafdb799b1",
+        "parentUid" : "5e0d4f00f78c0c7ce80263a2e2ce764f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1571769000789,
+          "stop" : 1571769003528,
+          "duration" : 2739
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "testLoginSuccess",
+        "uid" : "f6bc09f3e7fd911e",
+        "parentUid" : "5e0d4f00f78c0c7ce80263a2e2ce764f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1571768987232,
+          "stop" : 1571769000587,
+          "duration" : 13355
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "5e0d4f00f78c0c7ce80263a2e2ce764f"
+    } ],
+    "uid" : "d4739af710ccbd335f3b9bcbc3dae5a0"
+  } ]
+}

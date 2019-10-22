@@ -2,7 +2,6 @@ package pages;
 
 import org.openqa.selenium.*;
 
-import java.util.NoSuchElementException;
 import java.util.concurrent.TimeUnit;
 
 public class UIutilities {
@@ -14,7 +13,7 @@ public class UIutilities {
     }
 
     protected void click(By element, int retry, int timeoutSeconds) {
-        //TODO workaround for strange glitch - we use ID selector, but see that selenium used CSS selector
+        // TODO workaround for strange glitch - we use ID selector, but see that selenium used CSS selector
         try {
             Thread.sleep(TimeUnit.SECONDS.toMillis(1));
         } catch (InterruptedException e) {
@@ -25,14 +24,14 @@ public class UIutilities {
                 System.out.println("Searching element" + element.toString() + ". Retry - " + (retry - i));
                 driver.findElement(element).click();
                 break;
-            } catch (NoSuchElementException | StaleElementReferenceException | ElementNotInteractableException ex) {
+            } catch (org.openqa.selenium.NoSuchElementException | StaleElementReferenceException | ElementNotInteractableException ex) {
                 try {
                     System.out.println("Searching element" + element.toString() + ". Retry - " + (retry - i));
                     Thread.sleep(TimeUnit.SECONDS.toMillis(timeoutSeconds));
                     driver.findElement(element).click();
                     break;
-                } catch (NoSuchElementException | StaleElementReferenceException | ElementNotInteractableException | InterruptedException ex2) {
-                    if (i == 0) {
+                } catch (org.openqa.selenium.NoSuchElementException | StaleElementReferenceException | ElementNotInteractableException | InterruptedException ex2) {
+                    if(i == 0){
                         try {
                             throw new Exception("Failed to find element " + element.toString());
                         } catch (Exception e) {
@@ -46,7 +45,7 @@ public class UIutilities {
     }
 
     protected void enterText(By element, String text, int retry, int timeoutSeconds) {
-        //TODO workaround for strange glitch - we use ID selector, but see that selenium used CSS selector
+        // TODO workaround for strange glitch - we use ID selector, but see that selenium used CSS selector
         try {
             Thread.sleep(TimeUnit.SECONDS.toMillis(1));
         } catch (InterruptedException e) {
@@ -57,14 +56,14 @@ public class UIutilities {
                 System.out.println("Searching element" + element.toString() + ". Retry - " + (retry - i));
                 driver.findElement(element).sendKeys(text);
                 break;
-            } catch (NoSuchElementException | StaleElementReferenceException | ElementNotInteractableException ex) {
+            } catch (org.openqa.selenium.NoSuchElementException | StaleElementReferenceException | ElementNotInteractableException ex) {
                 try {
                     System.out.println("Searching element" + element.toString() + ". Retry - " + (retry - i));
                     Thread.sleep(TimeUnit.SECONDS.toMillis(timeoutSeconds));
                     driver.findElement(element).sendKeys(text);
                     break;
                 } catch (NoSuchElementException | StaleElementReferenceException | ElementNotInteractableException | InterruptedException ex2) {
-                    if (i == 0) {
+                    if(i == 0){
                         try {
                             throw new Exception("Failed to find element " + element.toString());
                         } catch (Exception e) {

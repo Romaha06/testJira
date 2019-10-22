@@ -1,0 +1,49 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "name" : "packages",
+  "children" : [ {
+    "name" : "TestLogin",
+    "children" : [ {
+      "name" : "testLoginSuccess",
+      "uid" : "f6bc09f3e7fd911e",
+      "parentUid" : "6396a614df3af496d92f944af2b7f037",
+      "status" : "passed",
+      "time" : {
+        "start" : 1571768987232,
+        "stop" : 1571769000587,
+        "duration" : 13355
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "testLoginWrongLassword",
+      "uid" : "2ef183bafdb799b1",
+      "parentUid" : "6396a614df3af496d92f944af2b7f037",
+      "status" : "passed",
+      "time" : {
+        "start" : 1571769000789,
+        "stop" : 1571769003528,
+        "duration" : 2739
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "6396a614df3af496d92f944af2b7f037"
+  }, {
+    "name" : "CreateIssueTest",
+    "children" : [ {
+      "name" : "createIssurTest",
+      "uid" : "f37eb4c81c240074",
+      "parentUid" : "2ba9d1cf12da5122384f2b39c9fbfb35",
+      "status" : "passed",
+      "time" : {
+        "start" : 1571769600864,
+        "stop" : 1571769626039,
+        "duration" : 25175
+      },
+      "flaky" : true,
+      "parameters" : [ ]
+    } ],
+    "uid" : "2ba9d1cf12da5122384f2b39c9fbfb35"
+  } ]
+}

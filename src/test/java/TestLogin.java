@@ -1,3 +1,4 @@
+import io.qameta.allure.Feature;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.LoginPage;
@@ -5,7 +6,8 @@ import pages.LoginPage;
 public class TestLogin extends BaseTest {
 
 
-    @Test
+    @Feature("Login Success")
+    @Test(groups = {"Regression"})
     public void testLoginSuccess() {
         LoginPage loginPage = new LoginPage(driver);
         loginPage.navigate();
@@ -13,7 +15,8 @@ public class TestLogin extends BaseTest {
         Assert.assertEquals(driver.getCurrentUrl(), "https://jira.hillel.it/secure/Dashboard.jspa");
     }
 
-    @Test
+    @Feature("Login Wrong")
+    @Test(groups = {"Regression"})
     public void testLoginWrongLassword() {
         LoginPage loginPage = new LoginPage(driver);
         loginPage.navigate();
