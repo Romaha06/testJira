@@ -1,3 +1,4 @@
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterTest;
@@ -8,10 +9,9 @@ public class BaseTest {
 
     @BeforeTest
     public void setUp() {
-        // Fix for - The path to the driver executable must be set by the webdriver.chrome.driver system property
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\Admin\\Test\\chromedriver.exe");
-        // Create a new instance of the Chrome driver
-        this.driver = new ChromeDriver();
+        WebDriverManager.chromedriver().setup();
+        driver = new ChromeDriver();
+        driver.manage().window().maximize();
     }
 
     @AfterTest

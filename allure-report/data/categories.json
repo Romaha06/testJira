@@ -1,5 +1,25 @@
 {
   "uid" : "4b4757e66a1912dae1a509f688f20b0f",
   "name" : "categories",
-  "children" : [ ]
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "expected [https://jira.hillel.it/secure/Dashboard.jspa] but found [https://jira.hillel.it/login.jsp]",
+      "children" : [ {
+        "name" : "testLoginSuccess",
+        "uid" : "8232ad3ecf6a98aa",
+        "parentUid" : "b8fba8e4bdd587a0a58f0ab416462744",
+        "status" : "failed",
+        "time" : {
+          "start" : 1571938508188,
+          "stop" : 1571938511801,
+          "duration" : 3613
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "b8fba8e4bdd587a0a58f0ab416462744"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ]
 }

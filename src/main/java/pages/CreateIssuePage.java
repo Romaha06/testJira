@@ -1,5 +1,6 @@
 package pages;
 
+import io.qameta.allure.Step;
 import org.openqa.selenium.*;
 
 
@@ -24,28 +25,34 @@ public class CreateIssuePage {
         uIutilities = new UIutilities(driver);
     }
 
+    @Step
     public void clickOnTheCreateIssueButton()  {
         uIutilities.click(createIssueButton, 3, 3);
 
     }
 
+    @Step
     public void fillInProjectInput(String name) {
         uIutilities.enterText(projectInput, "QAAUTO-8", 3, 3);
     }
 
+    @Step
     public void fillInIssueTypeInput(String type) {
         uIutilities.enterText(issueTypeInput, type, 3, 3);
     }
 
+    @Step
     public void fillInSummary(String text) {
         uIutilities.enterText(summaryInput, text, 3, 3);
     }
 
+    @Step
     public void fillInDescription(String text) {
         driver.findElement(dataModeSource);
         uIutilities.enterText(descriptionInput, text, 3, 3);
     }
 
+    @Step
     public void clickCreateIssue() {
         uIutilities.click(createButton, 3, 3);
     }
