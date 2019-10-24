@@ -1,0 +1,94 @@
+{
+  "uid" : "5695f0904b992ce",
+  "name" : "createIssurTest",
+  "fullName" : "CreateIssueTest.createIssurTest",
+  "historyId" : "531a2835620d3031902d940331bb4aa1",
+  "time" : {
+    "start" : 1571769265071,
+    "stop" : 1571769296590,
+    "duration" : 31519
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "setUp",
+    "time" : {
+      "start" : 1571769261003,
+      "stop" : 1571769264937,
+      "duration" : 3934
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "tearDown",
+    "time" : {
+      "start" : 1571769296765,
+      "stop" : 1571769297586,
+      "duration" : 821
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "CreateIssueTest"
+  }, {
+    "name" : "testClass",
+    "value" : "CreateIssueTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "createIssurTest"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Default Suite"
+  }, {
+    "name" : "suite",
+    "value" : "testJira"
+  }, {
+    "name" : "subSuite",
+    "value" : "CreateIssueTest"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-8VADEPP"
+  }, {
+    "name" : "thread",
+    "value" : "832@DESKTOP-8VADEPP.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "feature",
+    "value" : "Issue"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "5695f0904b992ce.json",
+  "parameterValues" : [ ]
+}
