@@ -12,7 +12,7 @@ public class JIRATest extends BaseTest {
     public void testLoginSuccess() {
         LoginPage loginPage = new LoginPage();
         loginPage.navigate();
-        loginPage.Login("Roman_Chelombitko", "Roman_Chelombitk");
+        loginPage.Login("Roman_Chelombitko", "Roman_Chelombitko");
         Assert.assertEquals(WebDriverFactory.getDriver().getCurrentUrl(), "https://jira.hillel.it/secure/Dashboard.jspa");
     }
 
@@ -30,7 +30,7 @@ public class JIRATest extends BaseTest {
     public void createIssurTest()  {
         LoginPage loginPage = new LoginPage();
         loginPage.navigate();
-        loginPage.Login("Roman_Chelombitko", "Roman_Chelombitk");
+        loginPage.Login("Roman_Chelombitko", "Roman_Chelombitko");
         Assert.assertEquals(WebDriverFactory.getDriver().getCurrentUrl(), "https://jira.hillel.it/secure/Dashboard.jspa");
         CreateIssuePage createIssuePage = new CreateIssuePage();
         createIssuePage.clickOnTheCreateIssueButton();
