@@ -9,7 +9,7 @@
         "name" : "TestLogin",
         "children" : [ {
           "name" : "testLoginWrongLassword",
-          "uid" : "af09652b62c6e27a",
+          "uid" : "5cfebc148686e3dd",
           "parentUid" : "f4f35685fabeadd34bc020ac8adacd41",
           "status" : "passed",
           "time" : {
@@ -21,7 +21,7 @@
           "parameters" : [ ]
         }, {
           "name" : "testLoginSuccess",
-          "uid" : "b13d3daadb941460",
+          "uid" : "d0fea51d7c5d9722",
           "parentUid" : "f4f35685fabeadd34bc020ac8adacd41",
           "status" : "passed",
           "time" : {
@@ -37,7 +37,7 @@
         "name" : "CreateIssueTest",
         "children" : [ {
           "name" : "createIssurTest",
-          "uid" : "a9cdeb289f032a5f",
+          "uid" : "30f4bc720091c57",
           "parentUid" : "f52931ee4f5a3347b64802035028416a",
           "status" : "passed",
           "time" : {
@@ -49,49 +49,57 @@
           "parameters" : [ ]
         } ],
         "uid" : "f52931ee4f5a3347b64802035028416a"
-      }, {
+      } ],
+      "uid" : "c88caa50bf96b076ffda62c2257b29db"
+    } ],
+    "uid" : "8399274b4bb69ec8699907dd6ef7de4e"
+  }, {
+    "name" : "JIRA Suite",
+    "children" : [ {
+      "name" : "Issue",
+      "children" : [ {
         "name" : "JIRATest",
         "children" : [ {
           "name" : "createIssurTest",
-          "uid" : "7ac92be2c7004660",
-          "parentUid" : "07e13ad6c2b09c22d43ce2db80184777",
-          "status" : "passed",
+          "uid" : "25039e608a118d08",
+          "parentUid" : "30e7893670db2c24d866c0a93c780aca",
+          "status" : "failed",
           "time" : {
-            "start" : 1571938446869,
-            "stop" : 1571938472809,
-            "duration" : 25940
-          },
-          "flaky" : false,
-          "parameters" : [ ]
-        }, {
-          "name" : "testLoginWrongLassword",
-          "uid" : "6686c7f9366dd495",
-          "parentUid" : "07e13ad6c2b09c22d43ce2db80184777",
-          "status" : "passed",
-          "time" : {
-            "start" : 1571938475382,
-            "stop" : 1571938476896,
-            "duration" : 1514
+            "start" : 1572163260631,
+            "stop" : 1572163264573,
+            "duration" : 3942
           },
           "flaky" : false,
           "parameters" : [ ]
         }, {
           "name" : "testLoginSuccess",
-          "uid" : "8232ad3ecf6a98aa",
-          "parentUid" : "07e13ad6c2b09c22d43ce2db80184777",
-          "status" : "failed",
+          "uid" : "f823e686587e1198",
+          "parentUid" : "30e7893670db2c24d866c0a93c780aca",
+          "status" : "passed",
           "time" : {
-            "start" : 1571938508188,
-            "stop" : 1571938511801,
-            "duration" : 3613
+            "start" : 1572163265214,
+            "stop" : 1572163270736,
+            "duration" : 5522
+          },
+          "flaky" : true,
+          "parameters" : [ ]
+        }, {
+          "name" : "testLoginWrongLassword",
+          "uid" : "2f857dac332546b1",
+          "parentUid" : "30e7893670db2c24d866c0a93c780aca",
+          "status" : "passed",
+          "time" : {
+            "start" : 1572163270742,
+            "stop" : 1572163273034,
+            "duration" : 2292
           },
           "flaky" : false,
           "parameters" : [ ]
         } ],
-        "uid" : "07e13ad6c2b09c22d43ce2db80184777"
+        "uid" : "30e7893670db2c24d866c0a93c780aca"
       } ],
-      "uid" : "c88caa50bf96b076ffda62c2257b29db"
+      "uid" : "390518eefd4f71918170efb44d00aef4"
     } ],
-    "uid" : "8399274b4bb69ec8699907dd6ef7de4e"
+    "uid" : "875d667e9f2f21cfcde575cf812bca46"
   } ]
 }

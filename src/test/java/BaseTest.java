@@ -1,22 +1,24 @@
-import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.*;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
+import utils.WebDriverFactory;
 
 public class BaseTest {
     protected WebDriver driver;
 
-    @BeforeTest
+    @BeforeTest(groups = "Regression")
     public void setUp() {
-        WebDriverManager.chromedriver().setup();
-        driver = new ChromeDriver();
-        driver.manage().window().maximize();
+            WebDriverFactory.createInstance("Chrome");
+
+//        WebDriverManager.chromedriver().setup();
+//        driver = new ChromeDriver();
+//        driver.manage().window().maximize();
     }
 
-    @AfterTest
+    @AfterTest(groups = "Regression")
     public void tearDown() {
+        WebDriverFactory.getDriver().quit();
         // Close the driver
-        this.driver.quit();
+        //this.driver.quit();
     }
 }
