@@ -1,0 +1,170 @@
+{
+  "uid" : "49c626ce279fb4de",
+  "name" : "testLoginSuccess",
+  "fullName" : "JIRATest.testLoginSuccess",
+  "historyId" : "a3974e5372120f98ba0f1fe017f62949",
+  "time" : {
+    "start" : 1572163202747,
+    "stop" : 1572163207329,
+    "duration" : 4582
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "setUp",
+    "time" : {
+      "start" : 1572163196664,
+      "stop" : 1572163202619,
+      "duration" : 5955
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "navigate",
+      "time" : {
+        "start" : 1572163202816,
+        "stop" : 1572163204151,
+        "duration" : 1335
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "enterUserName",
+      "time" : {
+        "start" : 1572163204156,
+        "stop" : 1572163204295,
+        "duration" : 139
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "name",
+        "value" : "Roman_Chelombitko"
+      } ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "enterPasswordName",
+      "time" : {
+        "start" : 1572163204295,
+        "stop" : 1572163204432,
+        "duration" : 137
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "password",
+        "value" : "Roman_Chelombitko"
+      } ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "clickLogin",
+      "time" : {
+        "start" : 1572163204432,
+        "stop" : 1572163207309,
+        "duration" : 2877
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 4,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "tearDown",
+    "time" : {
+      "start" : 1572163207729,
+      "stop" : 1572163208394,
+      "duration" : 665
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "JIRATest"
+  }, {
+    "name" : "testClass",
+    "value" : "JIRATest"
+  }, {
+    "name" : "testMethod",
+    "value" : "testLoginSuccess"
+  }, {
+    "name" : "parentSuite",
+    "value" : "JIRA Suite"
+  }, {
+    "name" : "suite",
+    "value" : "Issue"
+  }, {
+    "name" : "subSuite",
+    "value" : "JIRATest"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-8VADEPP"
+  }, {
+    "name" : "thread",
+    "value" : "6788@DESKTOP-8VADEPP.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "feature",
+    "value" : "Login Success"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "49c626ce279fb4de.json",
+  "parameterValues" : [ ]
+}

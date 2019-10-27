@@ -9,7 +9,7 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "a9cdeb289f032a5f",
+      "uid" : "30f4bc720091c57",
       "status" : "passed",
       "time" : {
         "start" : 1571851011851,
@@ -28,16 +28,16 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "6686c7f9366dd495",
+      "uid" : "2f857dac332546b1",
       "status" : "passed",
       "time" : {
-        "start" : 1571938475382,
-        "stop" : 1571938476896,
-        "duration" : 1514
+        "start" : 1572163270742,
+        "stop" : 1572163273034,
+        "duration" : 2292
       }
     } ]
   },
-  "be8758a3738f1d43dd94782ca4ddaebc" : {
+  "a3974e5372120f98ba0f1fe017f62949" : {
     "statistic" : {
       "failed" : 0,
       "broken" : 0,
@@ -47,16 +47,16 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "7ac92be2c7004660",
+      "uid" : "f823e686587e1198",
       "status" : "passed",
       "time" : {
-        "start" : 1571938446869,
-        "stop" : 1571938472809,
-        "duration" : 25940
+        "start" : 1572163265214,
+        "stop" : 1572163270736,
+        "duration" : 5522
       }
     } ]
   },
-  "a3974e5372120f98ba0f1fe017f62949" : {
+  "be8758a3738f1d43dd94782ca4ddaebc" : {
     "statistic" : {
       "failed" : 1,
       "broken" : 0,
@@ -66,13 +66,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "8232ad3ecf6a98aa",
+      "uid" : "25039e608a118d08",
       "status" : "failed",
       "statusDetails" : "expected [https://jira.hillel.it/secure/Dashboard.jspa] but found [https://jira.hillel.it/login.jsp]",
       "time" : {
-        "start" : 1571938508188,
-        "stop" : 1571938511801,
-        "duration" : 3613
+        "start" : 1572163260631,
+        "stop" : 1572163264573,
+        "duration" : 3942
       }
     } ]
   },
@@ -86,7 +86,7 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "af09652b62c6e27a",
+      "uid" : "5cfebc148686e3dd",
       "status" : "passed",
       "time" : {
         "start" : 1571769000789,
@@ -105,7 +105,7 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "b13d3daadb941460",
+      "uid" : "d0fea51d7c5d9722",
       "status" : "passed",
       "time" : {
         "start" : 1571933245043,

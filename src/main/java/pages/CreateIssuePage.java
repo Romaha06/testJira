@@ -2,6 +2,7 @@ package pages;
 
 import io.qameta.allure.Step;
 import org.openqa.selenium.*;
+import utils.WebDriverFactory;
 
 
 public class CreateIssuePage {
@@ -20,8 +21,8 @@ public class CreateIssuePage {
     private By issueSuccessfullyCreated = By.xpath("//div[@class='aui-message closeable aui-message-success aui-will-close']");
 
 
-    public CreateIssuePage(WebDriver driver) {
-        this.driver = driver;
+    public CreateIssuePage() {
+        this.driver = WebDriverFactory.getDriver();
         uIutilities = new UIutilities(driver);
     }
 

@@ -6,14 +6,14 @@
     "children" : [ {
       "name" : "expected [https://jira.hillel.it/secure/Dashboard.jspa] but found [https://jira.hillel.it/login.jsp]",
       "children" : [ {
-        "name" : "testLoginSuccess",
-        "uid" : "8232ad3ecf6a98aa",
+        "name" : "createIssurTest",
+        "uid" : "25039e608a118d08",
         "parentUid" : "b8fba8e4bdd587a0a58f0ab416462744",
         "status" : "failed",
         "time" : {
-          "start" : 1571938508188,
-          "stop" : 1571938511801,
-          "duration" : 3613
+          "start" : 1572163260631,
+          "stop" : 1572163264573,
+          "duration" : 3942
         },
         "flaky" : false,
         "parameters" : [ ]

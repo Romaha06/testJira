@@ -7,6 +7,7 @@
         <groups>
             <run>
                 <include name="Regression"/>
+                <include name="Smoke"/>
                 <exclude name="SKIP"/>
             </run>
         </groups>
