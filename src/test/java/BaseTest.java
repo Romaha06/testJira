@@ -4,11 +4,11 @@ import org.testng.annotations.BeforeTest;
 import utils.WebDriverFactory;
 
 public class BaseTest {
-    protected WebDriver driver;
+
 
     @BeforeTest(groups = "Regression")
     public void setUp() {
-            WebDriverFactory.createInstance("Chrome");
+            WebDriverFactory.createInstance("chrome");
 
 //        WebDriverManager.chromedriver().setup();
 //        driver = new ChromeDriver();
