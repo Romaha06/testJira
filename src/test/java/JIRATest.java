@@ -1,11 +1,21 @@
 import io.qameta.allure.Feature;
 import org.testng.Assert;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import pages.CreateIssuePage;
 import pages.LoginPage;
 import utils.WebDriverFactory;
 
 public class JIRATest extends BaseTest {
+
+
+    @DataProvider(name = "data-provider")
+    public Object[][] dataProviderData(){
+        return new Object[][]{
+                {"Roman_Chelombitko", "Roman"},
+                {"Roman_Chelombitko", "Chelombitko"}
+        };
+    }
 
     @Feature("Login Success")
     @Test(groups = {"Smoke"})
@@ -17,11 +27,11 @@ public class JIRATest extends BaseTest {
     }
 
     @Feature("Login Wrong")
-    @Test(groups = {"Regression", "SKIP"})
-    public void testLoginWrongLassword() {
+    @Test(groups = {"Regression"},dataProvider="data-provider")
+    public void testLoginWrongLassword(String userName,String password) {
         LoginPage loginPage = new LoginPage();
         loginPage.navigate();
-        loginPage.Login("Roman_Chelombitko", "1235648");
+        loginPage.Login(userName, password);
         Assert.assertEquals(loginPage.errorMassage(), "Sorry, your username and password are incorrect - please try again.");
     }
 

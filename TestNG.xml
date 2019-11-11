@@ -1,18 +1,18 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="JIRA Suite" parallel="false">
-    <listeners>
-        <listener class-name="utils.TestListener"/>
-    </listeners>
-    <test name="Issue">
-        <groups>
-            <run>
-                <include name="Regression"/>
-                <include name="Smoke"/>
-                <exclude name="SKIP"/>
-            </run>
-        </groups>
-        <classes>
-            <class name="JIRATest"/>
-        </classes>
-    </test>
+<listeners>
+    <listener class-name="utils.TestListener"/>
+</listeners>
+<test name="Issue">
+    <groups>
+        <run>
+            <include name="Regression"/>
+            <include name="Smoke"/>
+            <exclude name="SKIP"/>
+        </run>
+    </groups>
+    <classes>
+        <class name="JIRATest"/>
+    </classes>
+</test>
 </suite>
