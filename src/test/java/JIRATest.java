@@ -19,9 +19,9 @@ public class JIRATest extends BaseTest {
         };
     }
 
-    @Feature(" Unsuccessful lLogin Test")
+    @Feature(" Unsuccessful Login Test")
     @Test(groups = {"Regression"},dataProvider="data-provider")
-    public void  unsuccessfullLoginTest(String userName,String password) {
+    public void  unsuccessfulLoginTest(String userName,String password) {
         LoginPage loginPage = new LoginPage();
         loginPage.navigate();
         loginPage.Login(userName, password);
