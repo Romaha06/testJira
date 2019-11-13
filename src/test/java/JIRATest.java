@@ -13,8 +13,19 @@ public class JIRATest extends BaseTest {
     public Object[][] dataProviderData(){
         return new Object[][]{
                 {"Roman_Chelombitko", "Roman"},
-                {"Roman_Chelombitko", "Chelombitko"}
+                {"Roman_Chelombitko", "Chelombitko"},
+                {"Roman_Chelombitko", "Chel"},
+                {"Roman_Chelombitko", "Chelom"}
         };
+    }
+
+    @Feature(" Unsuccessful lLogin Test")
+    @Test(groups = {"Regression"},dataProvider="data-provider")
+    public void  unsuccessfullLoginTest(String userName,String password) {
+        LoginPage loginPage = new LoginPage();
+        loginPage.navigate();
+        loginPage.Login(userName, password);
+        Assert.assertEquals(loginPage.errorMassage(), "Sorry, your username and password are incorrect - please try again.");
     }
 
     @Feature("Login Success")
@@ -26,14 +37,6 @@ public class JIRATest extends BaseTest {
         Assert.assertEquals(WebDriverFactory.getDriver().getCurrentUrl(), "https://jira.hillel.it/secure/Dashboard.jspa");
     }
 
-    @Feature("Login Wrong")
-    @Test(groups = {"Regression"},dataProvider="data-provider")
-    public void testLoginWrongLassword(String userName,String password) {
-        LoginPage loginPage = new LoginPage();
-        loginPage.navigate();
-        loginPage.Login(userName, password);
-        Assert.assertEquals(loginPage.errorMassage(), "Sorry, your username and password are incorrect - please try again.");
-    }
 
     @Feature("Issue")
     @Test(groups = {"Regression"})
